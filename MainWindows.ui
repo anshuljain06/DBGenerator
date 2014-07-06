@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>473</width>
+    <height>161</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DB Generator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Images.qrc">
+    <normaloff>:/Images/DBGeneratorIcon.png</normaloff>
+    <normalon>:/Images/DBGeneratorIcon.png</normalon>
+    <disabledoff>:/Images/DBGeneratorIcon.png</disabledoff>
+    <disabledon>:/Images/DBGeneratorIcon.png</disabledon>
+    <activeoff>:/Images/DBGeneratorIcon.png</activeoff>
+    <activeon>:/Images/DBGeneratorIcon.png</activeon>
+    <selectedoff>:/Images/DBGeneratorIcon.png</selectedoff>
+    <selectedon>:/Images/DBGeneratorIcon.png</selectedon>:/Images/DBGeneratorIcon.png</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QComboBox" name="fPlatform">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="modelColumn">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>iPhone</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Blackberry 10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Qt Application</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>155</x>
+      <y>20</y>
+      <width>46</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Platform</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="srcButton">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fFileName">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>341</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>41</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Source</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fGenerateButton">
+    <property name="geometry">
+     <rect>
+      <x>155</x>
+      <y>120</y>
+      <width>156</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate Database Files</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fMessageText">
+    <property name="geometry">
+     <rect>
+      <x>115</x>
+      <y>50</y>
+      <width>236</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
